@@ -1,0 +1,186 @@
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="golfIQ.Views.RoundsPage"
+    Shell.NavBarIsVisible="False"
+    BackgroundColor="#0A0A0A">
+
+    <ScrollView>
+
+        <VerticalStackLayout
+            Padding="24"
+            Spacing="20">
+
+            <!-- Header -->
+            <Label
+                Text="My Rounds"
+                FontSize="32"
+                FontAttributes="Bold"
+                TextColor="White" />
+
+            <Label
+                Text="View and manage your golf rounds"
+                FontSize="15"
+                TextColor="#A0A0A0" />
+
+            <!-- Add Round Button -->
+            <Button
+                Text="+ Add New Round"
+                BackgroundColor="#8BCF4A"
+                TextColor="Black"
+                FontAttributes="Bold"
+                HeightRequest="55"
+                CornerRadius="16"
+                Clicked="OnAddRoundClicked"/>
+
+            <!-- Summary Card -->
+            <Frame
+                BackgroundColor="#151515"
+                CornerRadius="18"
+                Padding="20"
+                HasShadow="False">
+
+                <Grid ColumnDefinitions="*,*">
+
+                    <VerticalStackLayout>
+                        <Label
+                            Text="Total Rounds"
+                            TextColor="#A0A0A0" />
+
+                        <Label
+                            Text="27"
+                            FontSize="28"
+                            FontAttributes="Bold"
+                            TextColor="White" />
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Grid.Column="1">
+                        <Label
+                            Text="Best Score"
+                            TextColor="#A0A0A0" />
+
+                        <Label
+                            Text="78"
+                            FontSize="28"
+                            FontAttributes="Bold"
+                            TextColor="White" />
+                    </VerticalStackLayout>
+
+                </Grid>
+
+            </Frame>
+
+            <!-- Recent Rounds -->
+            <Label
+                Text="Recent Rounds"
+                FontSize="22"
+                FontAttributes="Bold"
+                TextColor="White" />
+
+            <!-- Round Card -->
+            <Frame
+                BackgroundColor="#151515"
+                CornerRadius="16"
+                Padding="16"
+                HasShadow="False">
+
+                <Grid
+                    ColumnDefinitions="*,Auto"
+                    RowDefinitions="Auto,Auto">
+
+                    <Label
+                        Text="Royal Liverpool"
+                        FontSize="18"
+                        FontAttributes="Bold"
+                        TextColor="White" />
+
+                    <Label
+                        Grid.Column="1"
+                        Text="86"
+                        FontSize="24"
+                        FontAttributes="Bold"
+                        TextColor="#8BCF4A" />
+
+                    <Label
+                        Grid.Row="1"
+                        Text="15 Jun 2025"
+                        FontSize="13"
+                        TextColor="#A0A0A0" />
+
+                </Grid>
+
+            </Frame>
+
+            <!-- Round Card -->
+            <Frame
+                BackgroundColor="#151515"
+                CornerRadius="16"
+                Padding="16"
+                HasShadow="False">
+
+                <Grid
+                    ColumnDefinitions="*,Auto"
+                    RowDefinitions="Auto,Auto">
+
+                    <Label
+                        Text="St Andrews Old Course"
+                        FontSize="18"
+                        FontAttributes="Bold"
+                        TextColor="White" />
+
+                    <Label
+                        Grid.Column="1"
+                        Text="82"
+                        FontSize="24"
+                        FontAttributes="Bold"
+                        TextColor="#8BCF4A" />
+
+                    <Label
+                        Grid.Row="1"
+                        Text="08 Jun 2025"
+                        FontSize="13"
+                        TextColor="#A0A0A0" />
+
+                </Grid>
+
+            </Frame>
+
+            <!-- Round Card -->
+            <Frame
+                BackgroundColor="#151515"
+                CornerRadius="16"
+                Padding="16"
+                HasShadow="False">
+
+                <Grid
+                    ColumnDefinitions="*,Auto"
+                    RowDefinitions="Auto,Auto">
+
+                    <Label
+                        Text="Pebble Beach"
+                        FontSize="18"
+                        FontAttributes="Bold"
+                        TextColor="White" />
+
+                    <Label
+                        Grid.Column="1"
+                        Text="89"
+                        FontSize="24"
+                        FontAttributes="Bold"
+                        TextColor="#8BCF4A" />
+
+                    <Label
+                        Grid.Row="1"
+                        Text="02 Jun 2025"
+                        FontSize="13"
+                        TextColor="#A0A0A0" />
+
+                </Grid>
+
+            </Frame>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>

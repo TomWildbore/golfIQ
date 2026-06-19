@@ -1,0 +1,169 @@
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="golfIQ.Views.HomePage"
+    Shell.NavBarIsVisible="False"
+    BackgroundColor="#0A0A0A">
+
+    <ScrollView>
+
+        <VerticalStackLayout
+            Padding="24"
+            Spacing="20">
+
+            <!-- Logo -->
+            <Image
+                Source="golfiq_logo.png"
+                HeightRequest="220"
+                Aspect="AspectFit"
+                HorizontalOptions="Center" />
+
+            <!-- Welcome -->
+            <Label
+                Text="Track Every Round"
+                FontSize="30"
+                FontAttributes="Bold"
+                TextColor="White"
+                HorizontalTextAlignment="Center" />
+
+            <Label
+                Text="Record scores, monitor progress, and build your golfing history."
+                FontSize="16"
+                TextColor="#A0A0A0"
+                HorizontalTextAlignment="Center" />
+
+            <!-- Start Round Button -->
+            <Button
+                Text="Start New Round"
+                BackgroundColor="#8BCF4A"
+                TextColor="Black"
+                FontAttributes="Bold"
+                HeightRequest="55"
+                CornerRadius="16" />
+
+            <!-- Stats Section -->
+            <Grid
+                ColumnDefinitions="*,*"
+                ColumnSpacing="12">
+
+                <Frame
+                    BackgroundColor="#151515"
+                    CornerRadius="18"
+                    Padding="16"
+                    HasShadow="False">
+
+                    <VerticalStackLayout>
+
+                        <Label
+                            Text="Rounds Played"
+                            FontSize="13"
+                            TextColor="#A0A0A0" />
+
+                        <Label
+                            Text="27"
+                            FontSize="30"
+                            FontAttributes="Bold"
+                            TextColor="White" />
+
+                    </VerticalStackLayout>
+
+                </Frame>
+
+                <Frame
+                    Grid.Column="1"
+                    BackgroundColor="#151515"
+                    CornerRadius="18"
+                    Padding="16"
+                    HasShadow="False">
+
+                    <VerticalStackLayout>
+
+                        <Label
+                            Text="Average Score"
+                            FontSize="13"
+                            TextColor="#A0A0A0" />
+
+                        <Label
+                            Text="84.3"
+                            FontSize="30"
+                            FontAttributes="Bold"
+                            TextColor="White" />
+
+                    </VerticalStackLayout>
+
+                </Frame>
+
+            </Grid>
+
+            <!-- Personal Best -->
+            <Frame
+                BackgroundColor="#151515"
+                CornerRadius="18"
+                Padding="20"
+                HasShadow="False">
+
+                <VerticalStackLayout
+                    Spacing="6">
+
+                    <Label
+                        Text="Personal Best"
+                        FontSize="14"
+                        FontAttributes="Bold"
+                        TextColor="#8BCF4A" />
+
+                    <Label
+                        Text="78"
+                        FontSize="36"
+                        FontAttributes="Bold"
+                        TextColor="White" />
+
+                    <Label
+                        Text="Lowest round recorded"
+                        FontSize="13"
+                        TextColor="#A0A0A0" />
+
+                </VerticalStackLayout>
+
+            </Frame>
+
+            <!-- Recent Round -->
+            <Frame
+                BackgroundColor="#151515"
+                CornerRadius="18"
+                Padding="20"
+                HasShadow="False">
+
+                <VerticalStackLayout
+                    Spacing="6">
+
+                    <Label
+                        Text="Most Recent Round"
+                        FontSize="14"
+                        FontAttributes="Bold"
+                        TextColor="#8BCF4A" />
+
+                    <Label
+                        Text="Royal Liverpool Golf Club"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        TextColor="White" />
+
+                    <Label
+                        Text="Score: 86"
+                        FontSize="15"
+                        TextColor="#A0A0A0" />
+
+                    <Label
+                        Text="Played 2 days ago"
+                        FontSize="13"
+                        TextColor="#707070" />
+
+                </VerticalStackLayout>
+
+            </Frame>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>

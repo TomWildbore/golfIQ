@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="golfIQ.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:golfIQ.Views"
+    FlyoutBehavior="Disabled"
+    
+    Shell.BackgroundColor="#0F1115"
+    Shell.ForegroundColor="White"
+    Shell.TitleColor="White"
+
+    Shell.TabBarBackgroundColor="#8BCF4A"
+    Shell.TabBarForegroundColor="Black"
+    Shell.TabBarTitleColor="Black"
+    Shell.TabBarUnselectedColor="#2E2E2E">
+
+    <TabBar>
+
+        <ShellContent
+            Title="Home"
+            Icon="home.png"
+            ContentTemplate="{DataTemplate views:HomePage}" />
+
+        <ShellContent
+            Title="Rounds"
+            Icon="rounds.png"
+            ContentTemplate="{DataTemplate views:RoundsPage}" />
+
+        <ShellContent
+            Title="Stats"
+            Icon="stats.png"
+            ContentTemplate="{DataTemplate views:StatisticsPage}" />
+
+        <ShellContent
+            Title="Settings"
+            Icon="settings.png"
+            ContentTemplate="{DataTemplate views:SettingsPage}" />
+
+    </TabBar>
+
+</Shell>

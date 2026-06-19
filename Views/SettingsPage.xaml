@@ -1,0 +1,246 @@
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="golfIQ.Views.SettingsPage"
+    Shell.NavBarIsVisible="False"
+    BackgroundColor="#0A0A0A">
+
+    <ScrollView>
+
+        <VerticalStackLayout
+            Padding="24"
+            Spacing="20">
+
+            <!-- Header -->
+            <Label
+                Text="Settings"
+                FontSize="32"
+                FontAttributes="Bold"
+                TextColor="White" />
+
+            <Label
+                Text="Manage your golfIQ preferences"
+                FontSize="15"
+                TextColor="#A0A0A0" />
+
+            <!-- Profile -->
+            <Frame
+                BackgroundColor="#151515"
+                CornerRadius="18"
+                Padding="20"
+                HasShadow="False">
+
+                <VerticalStackLayout
+                    Spacing="6">
+
+                    <Label
+                        Text="Player Profile"
+                        FontSize="14"
+                        FontAttributes="Bold"
+                        TextColor="#8BCF4A" />
+
+                    <Label
+                        Text="John Smith"
+                        FontSize="24"
+                        FontAttributes="Bold"
+                        TextColor="White" />
+
+                    <Label
+                        Text="GolfIQ Member"
+                        FontSize="13"
+                        TextColor="#A0A0A0" />
+
+                </VerticalStackLayout>
+
+            </Frame>
+
+            <!-- Preferences -->
+            <Label
+                Text="Preferences"
+                FontSize="22"
+                FontAttributes="Bold"
+                TextColor="White" />
+
+            <Frame
+                BackgroundColor="#151515"
+                CornerRadius="16"
+                Padding="16"
+                HasShadow="False">
+
+                <Grid ColumnDefinitions="*,Auto">
+
+                    <VerticalStackLayout>
+
+                        <Label
+                            Text="Default Tee"
+                            FontSize="18"
+                            FontAttributes="Bold"
+                            TextColor="White" />
+
+                        <Label
+                            Text="White Tees"
+                            FontSize="13"
+                            TextColor="#A0A0A0" />
+
+                    </VerticalStackLayout>
+
+                    <Label
+                        Grid.Column="1"
+                        Text=">"
+                        FontSize="20"
+                        TextColor="#8BCF4A"
+                        VerticalOptions="Center" />
+
+                </Grid>
+
+            </Frame>
+
+            <Frame
+                BackgroundColor="#151515"
+                CornerRadius="16"
+                Padding="16"
+                HasShadow="False">
+
+                <Grid ColumnDefinitions="*,Auto">
+
+                    <VerticalStackLayout>
+
+                        <Label
+                            Text="Scoring Format"
+                            FontSize="18"
+                            FontAttributes="Bold"
+                            TextColor="White" />
+
+                        <Label
+                            Text="Stroke Play"
+                            FontSize="13"
+                            TextColor="#A0A0A0" />
+
+                    </VerticalStackLayout>
+
+                    <Label
+                        Grid.Column="1"
+                        Text=">"
+                        FontSize="20"
+                        TextColor="#8BCF4A"
+                        VerticalOptions="Center" />
+
+                </Grid>
+
+            </Frame>
+
+            <!-- Data -->
+            <Label
+                Text="Data"
+                FontSize="22"
+                FontAttributes="Bold"
+                TextColor="White" />
+
+            <Frame
+                BackgroundColor="#151515"
+                CornerRadius="16"
+                Padding="16"
+                HasShadow="False">
+
+                <Grid ColumnDefinitions="*,Auto">
+
+                    <VerticalStackLayout>
+
+                        <Label
+                            Text="Export Round History"
+                            FontSize="18"
+                            FontAttributes="Bold"
+                            TextColor="White" />
+
+                        <Label
+                            Text="Download your rounds as a file"
+                            FontSize="13"
+                            TextColor="#A0A0A0" />
+
+                    </VerticalStackLayout>
+
+                    <Label
+                        Grid.Column="1"
+                        Text=">"
+                        FontSize="20"
+                        TextColor="#8BCF4A"
+                        VerticalOptions="Center" />
+
+                </Grid>
+
+            </Frame>
+
+            <!-- Danger Zone -->
+            <Label
+                Text="Danger Zone"
+                FontSize="22"
+                FontAttributes="Bold"
+                TextColor="White" />
+
+            <Frame
+                BackgroundColor="#2A1010"
+                BorderColor="#AA3333"
+                CornerRadius="16"
+                Padding="16"
+                HasShadow="False">
+
+                <VerticalStackLayout
+                    Spacing="10">
+
+                    <Label
+                        Text="Clear All Data"
+                        FontSize="18"
+                        FontAttributes="Bold"
+                        TextColor="#FF6B6B" />
+
+                    <Label
+                        Text="This will permanently remove all saved rounds and statistics."
+                        FontSize="13"
+                        TextColor="#D0D0D0" />
+
+                    <Button
+                        Text="Delete All Data"
+                        BackgroundColor="#AA3333"
+                        TextColor="White"
+                        CornerRadius="12" />
+
+                </VerticalStackLayout>
+
+            </Frame>
+
+            <!-- App Info -->
+            <Frame
+                BackgroundColor="#151515"
+                CornerRadius="18"
+                Padding="20"
+                HasShadow="False">
+
+                <VerticalStackLayout
+                    Spacing="6">
+
+                    <Label
+                        Text="About GolfIQ"
+                        FontSize="14"
+                        FontAttributes="Bold"
+                        TextColor="#8BCF4A" />
+
+                    <Label
+                        Text="Version 1.0"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        TextColor="White" />
+
+                    <Label
+                        Text="golfIQ helps you track rounds, monitor performance, and improve your game."
+                        FontSize="13"
+                        TextColor="#A0A0A0" />
+
+                </VerticalStackLayout>
+
+            </Frame>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>
