@@ -1,0 +1,50 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Build Results
+bin/
+obj/
+
+# Rider
+.idea/
+
+# MAUI
+*.apk
+*.aab
+
+# NuGet
+packages/
+*.nupkg
+
+# Logs
+*.log
+
+# SQLite Database
+*.db3
+*.sqlite
+*.sqlite3
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Android
+*.keystore
+
+# Temporary Files
+*.tmp
+*.temp
+
+# Visual Studio Cache
+ComponentModelCache/
+
+# Publish Output
+publish/
+
+# Test Results
+TestResults/
